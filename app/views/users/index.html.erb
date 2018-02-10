@@ -1,0 +1,13 @@
+<% @users = User.all %>
+<% @users.each do |user| %>
+  <h3>Email: </h3><%= user.email %>
+  <h3>Admin Status: </h3>
+    <% if user.isAdmin == 1 %>
+        <%= "Admin" %>
+    <% else %>
+        <%= "User" %>
+    <% end %>
+<br>
+------------------------------------------------------
+<br>
+<% end %>

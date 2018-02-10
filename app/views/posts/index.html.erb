@@ -1,0 +1,10 @@
+<h1>Home Page</h1>
+
+<% if current_user %>
+            <% if current_user.isAdmin == 1 %>
+                <h2><%= "You are an admin" %></h2>
+            <% else %>
+                <h2><%= "You are not an admin" %></h2>
+            <% end %>
+    <% end %> 
+
